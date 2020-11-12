@@ -1,5 +1,5 @@
 ---
-title: Millwright
+title: Machining
 tags: tag1, tag2
 category: Digital
 excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
@@ -9,7 +9,7 @@ image_caption: Photo by Josh Spires on Unsplash
 author: author1
 ---
 
-## Millwright
+## Machining
 
 Lorem markdownum aptos pes, Inachidos caput corrumpere! Hanc haud quam [est
 candore](http://quisquis-in.io/ramossuperum) conpulit meriti. Vincere ferocia
