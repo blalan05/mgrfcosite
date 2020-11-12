@@ -50,7 +50,7 @@ import PostListItem from '~/components/PostListItem.vue';
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Hello, Gabe!"
   },
   components: {
     PostListItem

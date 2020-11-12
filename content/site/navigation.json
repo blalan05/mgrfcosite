@@ -11,6 +11,11 @@
       "external": false
     },
     {
+      "name": "Contact",
+      "link": "/Contact",
+      "external": false
+    },
+    {
       "name": "Getting started",
       "link": "/category/getting-started",
       "external": false

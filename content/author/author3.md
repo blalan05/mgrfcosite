@@ -1,6 +1,6 @@
 ---
 id: author3
-name: John Doe
+name: John Dork
 bio: Sociosqu placerat tortor vestibulum inceptos ligula faucibus fames nibh sodales imperdiet vulputate
 facebook: https://www.facebook.com
 twitter: https://www.twitter.com
