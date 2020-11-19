@@ -3,12 +3,6 @@
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden pt-24">
       <div class="mx-4 sm:mx-0">
         <h1 class="pb-0 mb-0 text-5xl font-medium">{{ $page.tag.title }}</h1>
-        <p class="text-gray-700 text-xl">
-          A collection of
-          <span
-            class="self-center"
-          >{{ $page.tag.belongsTo.totalCount }} {{ postLabel }}</span>
-        </p>
       </div>
 
       <div class="pt-8 border-b"></div>
@@ -39,7 +33,7 @@
     tag(id: $id) {
       title
       path
-      belongsTo(perPage: 5, page: $page) @paginate {
+      belongsTo(perPage: 15, page: $page) @paginate {
         totalCount
         pageInfo {
           totalPages
@@ -80,18 +74,18 @@ import Pagination from "~/components/Pagination.vue";
 export default {
   components: {
     Pagination,
-    PostListItem
+    PostListItem,
   },
   computed: {
-    postLabel: function() {
+    postLabel: function () {
       var pluralize = require("pluralize");
       return pluralize("post", this.$page.tag.belongsTo.totalCount);
-    }
+    },
   },
   metaInfo() {
     return {
-      title: this.$page.tag.title
+      title: this.$page.tag.title,
     };
-  }
+  },
 };
 </script>

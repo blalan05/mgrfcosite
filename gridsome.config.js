@@ -70,7 +70,7 @@ module.exports = {
   },
   templates: {
     Blog: [{
-      path: '/blog/:title'
+      path: '/service/:title'
     }],
     Category: [{
       path: '/category/:title',
@@ -81,7 +81,7 @@ module.exports = {
       component: '~/templates/Author.vue'
     }],
     Tag: [{
-      path: '/tags/:title',
+      path: '/services/:title',
       component: '~/templates/Tag.vue'
     }],
   }

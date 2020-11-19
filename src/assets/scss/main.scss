@@ -1,7 +1,6 @@
 @tailwind base;
 
 blockquote {
-  @apply border-l;
   @apply border-l-4;
   @apply border-l-blue-500;
   @apply pl-4;
@@ -14,7 +13,6 @@ blockquote {
 }
 
 pre {
-  @apply border-l;
   @apply border-l-2;
   @apply border-l-gray-500;
   @apply pl-4;
@@ -79,7 +77,6 @@ ul {
 }
 
 .flex-post {
-  @apply border-b;
   @apply border-b-gray-300;
   @apply flex-col;
   @apply w-full;

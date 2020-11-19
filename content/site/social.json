@@ -2,15 +2,18 @@
   "social": [
     {
       "icon": "facebook",
+      "iconType": "fab",
       "link": "https://www.facebook.com"
     },
     {
-      "icon": "twitter",
-      "link": "https://twitter.com/"
+      "icon": "phone",
+      "iconType": "fas",
+      "link": "tel:920-927-3851"
     },
     {
-      "icon": "linkedin",
-      "link": "https://www.linkedin.com"
+      "icon": "envelope",
+      "iconType": "fas",
+      "link": "mailto:info@mgrf.com"
     }
   ]
 }

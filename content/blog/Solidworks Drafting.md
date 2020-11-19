@@ -1,12 +1,11 @@
 ---
 title: Solidworks Drafting
-tags: tag1, tag2
-category: Digital
+tags: Services,Shop
+category: Services
 excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
 created: 2019-01-10
-image: ./images/josh-spires-dronenr-sQalFlXIsLs-unsplash.jpg
-image_caption: Photo by Josh Spires on Unsplash
-author: author1
+image: ./images/cad.png
+image_caption: Employee using SolidWorks to draft a customers part
 ---
 
 ## Solidworks Drafting

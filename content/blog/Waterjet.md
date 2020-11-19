@@ -1,12 +1,10 @@
 ---
 title: Waterjet
-tags: tag1, tag2
-category: Digital
+tags: Services,Shop
+category: Services
 excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
-created: 2019-01-10
-image: ./images/josh-spires-dronenr-sQalFlXIsLs-unsplash.jpg
-image_caption: Photo by Josh Spires on Unsplash
-author: author1
+image: ./images/waterjet.jpg
+image_caption: Waterjet cutting through steel
 ---
 
 ## Waterjet
