@@ -97,6 +97,7 @@ query {
     }
     social {
       icon
+      iconType
       link
     }
   }

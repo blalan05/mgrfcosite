@@ -23,7 +23,7 @@ Gridsome starter based on the Casper theme for Ghost. Content is added via markd
 * Responsive 
 * Blog
 * Author pages
-* Tags
+* services
 * Categories
 * Dynamic custom pages
 * Pagination

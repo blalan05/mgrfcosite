@@ -1,11 +1,6 @@
 {
   "social": [
     {
-      "icon": "facebook",
-      "iconType": "fab",
-      "link": "https://www.facebook.com"
-    },
-    {
       "icon": "phone",
       "iconType": "fas",
       "link": "tel:920-927-3851"
@@ -14,6 +9,11 @@
       "icon": "envelope",
       "iconType": "fas",
       "link": "mailto:info@mgrf.com"
+    },
+    {
+      "icon": "facebook",
+      "iconType": "fab",
+      "link": "https://www.facebook.com/MGRFWI"
     }
   ]
 }

@@ -19,10 +19,8 @@ module.exports = function (api) {
   })
 
   api.onCreateNode(options => {
-    if (options.internal.typeName === 'Blog') {
-
-      options.tags = (typeof options.tags === 'string') ? options.tags.split(',').map(string => string.trim()) : options.tags;
-      options.author = (typeof options.author === 'string') ? options.author.split(',').map(string => string.trim()) : options.author;
+    if (options.internal.typeName === 'Service') {
+      options.services = (typeof options.services === 'string') ? options.services.split(',').map(string => string.trim()) : options.services;
       return {
         ...options
       };
@@ -37,35 +35,35 @@ module.exports = function (api) {
       const {
         data
       } = await graphql(`{
-      allBlog {
-        edges {
-          previous {
-            id
-          }
-          next {
-            id
-          }
-          node {
-            id
-            path
+        allService {
+          edges {
+            previous {
+              id
+            }
+            next {
+              id
+            }
+            node {
+              id
+              path
+            }
           }
         }
       }
-    }
     `);
 
-      data.allBlog.edges.forEach(function (element) {
-        createPage({
-          path: element.node.path,
-          component: './src/templates/BlogPost.vue',
-          context: {
-            previousElement: (element.previous) ? element.previous.id : '##empty##',
-            nextElement: (element.next) ? element.next.id : '##empty##',
-            id: element.node.id
-          }
-        });
-
+    data.allService.edges.forEach(function (element) {
+      createPage({
+        path: element.node.path,
+        component: './src/templates/BlogPost.vue',
+        context: {
+          previousElement: (element.previous) ? element.previous.id : '##empty##',
+          nextElement: (element.next) ? element.next.id : '##empty##',
+          id: element.node.id
+        }
       });
 
     });
+
+  });
 }

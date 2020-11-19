@@ -4,18 +4,22 @@
       <div class="flex flex-row flex-wrap items-center mx-4 sm:mx-0">
         <div class="w-full md:w-1/6 mx-auto sm:mx-0">
           <g-image
-            :src="$page.author.image"
+            :src="$page.product.image"
             class="rounded-full bg-gray-200 w-32 h-32 border-4 border-gray-400 mx-auto md:mx-0"
           ></g-image>
         </div>
         <div class="w-full md:w-5/6 text-center md:text-left md:pl-8 lg:pl-0">
-          <h1 class="pb-0 mb-0 mt-0 text-4xl font-medium">{{ $page.author.name }}</h1>
-          <p class="text-gray-700 text-xl" v-if="$page.author.bio">{{ $page.author.bio }}</p>
+          <h1 class="pb-0 mb-0 mt-0 text-4xl font-medium">
+            {{ $page.product.name }}
+          </h1>
+          <p class="text-gray-700 text-xl" v-if="$page.product.bio">
+            {{ $page.product.bio }}
+          </p>
           <div class="author-social">
-            {{ $page.author.belongsTo.totalCount }} {{ postLabel }}
+            {{ $page.product.belongsTo.totalCount }} {{ postLabel }}
             &nbsp;&middot;&nbsp;
             <a
-              :href="$page.author.facebook"
+              :href="$page.product.facebook"
               target="_blank"
               rel="noopener noreferrer"
               class="text-gray-400 hover:text-black"
@@ -24,7 +28,7 @@
             </a>
             &nbsp;
             <a
-              :href="$page.author.twitter"
+              :href="$page.product.twitter"
               target="_blank"
               rel="noopener noreferrer"
               class="text-gray-400 hover:text-black"
@@ -33,7 +37,7 @@
             </a>
             &nbsp;
             <a
-              :href="$page.author.linkedin"
+              :href="$page.product.linkedin"
               target="_blank"
               rel="noopener noreferrer"
               class="text-gray-400 hover:text-black"
@@ -48,7 +52,7 @@
 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
         <PostListItem
-          v-for="edge in $page.author.belongsTo.edges"
+          v-for="edge in $page.product.belongsTo.edges"
           :key="edge.node.id"
           :record="edge.node"
         />
@@ -56,11 +60,11 @@
 
       <div class="pagination flex justify-center mb-8">
         <Pagination
-          :baseUrl="$page.author.path"
-          :currentPage="$page.author.belongsTo.pageInfo.currentPage"
-          :totalPages="$page.author.belongsTo.pageInfo.totalPages"
+          :baseUrl="$page.product.path"
+          :currentPage="$page.product.belongsTo.pageInfo.currentPage"
+          :totalPages="$page.product.belongsTo.pageInfo.totalPages"
           :maxVisibleButtons="5"
-          v-if="$page.author.belongsTo.pageInfo.totalPages > 1"
+          v-if="$page.product.belongsTo.pageInfo.totalPages > 1"
         />
       </div>
     </div>
@@ -69,7 +73,7 @@
 
 <page-query>
   query($id: ID!, $page:Int) {
-    author(id: $id) {
+    product(id: $id) {
       name
       path
       bio
@@ -85,24 +89,11 @@
         }
         edges {
           node {
-            ... on Blog {
+            ... on Service {
               title
               excerpt
               image(width:800)
               path
-              timeToRead
-              humanTime : created(format:"DD MMM YYYY")
-              datetime : created
-              category {
-                id
-                title
-              }
-              author {
-                id
-                name
-                image(width:64, height:64, fit:inside)
-                path
-              }
             }
           }
         }
@@ -118,18 +109,18 @@ import Pagination from "~/components/Pagination.vue";
 export default {
   components: {
     Pagination,
-    PostListItem
+    PostListItem,
   },
   computed: {
-    postLabel: function() {
+    postLabel: function () {
       var pluralize = require("pluralize");
-      return pluralize("post", this.$page.author.belongsTo.totalCount);
-    }
+      return pluralize("post", this.$page.product.belongsTo.totalCount);
+    },
   },
   metaInfo() {
     return {
-      title: this.$page.author.name
+      title: this.$page.product.name,
     };
-  }
+  },
 };
 </script>

@@ -33,23 +33,18 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Author',
-        path: './content/author/*.md'
+        typeName: 'Product',
+        path: './content/product/*.md'
       }
     }, 
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Blog',
-        path: './content/blog/**/*.md',
+        typeName: 'Service',
+        path: './content/service/**/*.md',
         refs: {
-          author: 'Author',
-          tags: {
-            typeName: 'Tag',
-            create: true
-          },
-          category: {
-            typeName: 'Category',
+          services: {
+            typeName: 'Services',
             create: true
           }
         }
@@ -69,18 +64,14 @@ module.exports = {
     }
   },
   templates: {
-    Blog: [{
+    Service: [{
       path: '/service/:title'
     }],
-    Category: [{
-      path: '/category/:title',
-      component: '~/templates/Category.vue'
-    }],
-    Author: [{
-      path: '/author/:name',
+    Product: [{
+      path: '/product/:name',
       component: '~/templates/Author.vue'
     }],
-    Tag: [{
+    Services: [{
       path: '/services/:title',
       component: '~/templates/Tag.vue'
     }],
