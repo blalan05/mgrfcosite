@@ -64,10 +64,7 @@
     >
       <h2 class="m-0">
         <span class="text-4xl">
-          <font-awesome
-            :icon="['fas', 'ghost']"
-            class="mb-1 mr-3"
-          ></font-awesome>
+          <g-image src="./../../assets/logo.png" width="100%" />
         </span>
         <span class="text-5xl text-white">{{ $static.metadata.siteName }}</span>
       </h2>
