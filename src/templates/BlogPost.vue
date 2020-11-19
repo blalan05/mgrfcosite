@@ -47,7 +47,7 @@
         </section>
       </div>
       <section class="post-image mx-auto w-full">
-        <g-image :src="$page.blog.image"></g-image>
+        <g-image :src="$page.blog.image" :title="$page.blog.image_caption" :alt="$page.blog.image_caption"></g-image>
       </section>
 
       <div class="lg:mx-32 md:mx-16 px-4 sm:px-0">
