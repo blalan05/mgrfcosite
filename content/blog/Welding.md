@@ -3,7 +3,7 @@ title: Welding
 services: Services,Shop,Road
 category: Services
 excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
-image: ./images/welding.jpg
+image: ./images/welding.jpeg
 image_caption: Employee welding on an MGRF Product
 ---
 
