@@ -2,7 +2,7 @@
 title: Bulk Unit Maintenance & Repair
 tags: Services,Shop,Feed Body
 category: Services
-excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
+excerpt: We have a dedicated team of experienced Repair Technicians with a supporting crew that can help you get back to operational condition in a timely manner.
 image: ./images/bulk_unit_repair.jpg
 image_caption: Employees Repairing a Bulk Feed Body Unit
 ---
