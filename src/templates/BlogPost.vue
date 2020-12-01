@@ -14,7 +14,9 @@
       </div>
       <section class="post-image mx-auto w-full">
         <g-image
-          :src="require(`!!assets-loader!@services/${imageUrl}`)"
+          :src="
+            require(`!!assets-loader?width=1600&height=800!@services/${imageUrl}`)
+          "
           :alt="$page.service.image_caption"
         ></g-image>
       </section>
@@ -67,7 +69,7 @@
     service(id: $id) {
       title
       path
-      image (width:1600, height:800)
+      image
       image_caption
       excerpt
       content
@@ -81,7 +83,7 @@
     previous: service(id: $previousElement) {
       title
       excerpt
-      image(width:800)
+      image
       image_caption
       path
     }
@@ -89,7 +91,7 @@
     next: service(id: $nextElement) {
       title
       excerpt
-      image(width:800)
+      image
       image_caption
       path
     }

@@ -34,7 +34,7 @@
             ... on Service {
               title
               excerpt
-              image(width:800)
+              image
               path
             }
           }

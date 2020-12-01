@@ -5,7 +5,7 @@
   >
     <g-link :to="record.path" class="post-card-image-link">
       <g-image
-        :src="require(`!!assets-loader!@services/${imageUrl}`)"
+        :src="require(`!!assets-loader?width=800!@services/${imageUrl}`)"
         :alt="record.image_caption"
         class="post-card-image"
       ></g-image>
