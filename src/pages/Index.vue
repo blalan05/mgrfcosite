@@ -28,7 +28,6 @@ query($page:Int) {
         excerpt
         image
         path
-        datetime : created
       }
     }
   }
