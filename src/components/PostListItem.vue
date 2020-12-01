@@ -6,7 +6,7 @@
     <g-link :to="record.path" class="post-card-image-link">
       <g-image
         :src="record.image"
-        :alt="record.title"
+        :alt="record.image_caption"
         class="post-card-image"
       ></g-image>
     </g-link>

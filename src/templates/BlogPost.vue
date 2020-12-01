@@ -15,7 +15,6 @@
       <section class="post-image mx-auto w-full">
         <g-image
           :src="$page.service.image"
-          :title="$page.service.image_caption"
           :alt="$page.service.image_caption"
         ></g-image>
       </section>
@@ -68,7 +67,7 @@
     service(id: $id) {
       title
       path
-      image(width:1600, height:800)
+      image (width:1600, height:800)
       image_caption
       excerpt
       content
@@ -83,6 +82,7 @@
       title
       excerpt
       image(width:800)
+      image_caption
       path
     }
 
@@ -90,6 +90,7 @@
       title
       excerpt
       image(width:800)
+      image_caption
       path
     }
 
