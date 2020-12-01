@@ -14,7 +14,7 @@
       </div>
       <section class="post-image mx-auto w-full">
         <g-image
-          :src="$page.service.image"
+          :src="require(`!!assets-loader!@services/${imageUrl}`)"
           :alt="$page.service.image_caption"
         ></g-image>
       </section>
@@ -110,6 +110,11 @@ export default {
     return {
       title: this.$page.service.title,
     };
+  },
+  computed: {
+    imageUrl() {
+      return this.$page.service.image;
+    },
   },
 };
 </script>

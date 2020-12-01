@@ -11,6 +11,7 @@
     "@gridsome/transformer-remark": "^0.6.2",
     "@noxify/gridsome-remark-classes": "^1.0.0",
     "@noxify/gridsome-remark-table-align": "^1.0.0",
+    "assets-loader": "^0.5.2",
     "core-js": "^3.6.5",
     "gridsome": "^0.7.20",
     "gridsome-plugin-tailwindcss": "^3.0.1",

@@ -4,7 +4,7 @@ services: Services,Shop
 tags: Services,Shop
 category: Services
 excerpt: We have a state-of-the-art spray booth for applying wet paint to small parts or large equipment.
-image: ./images/wet_paint_booth.jpg
+image: wet_paint_booth.jpg
 image_caption: Employee painting customer's parts
 ---
 

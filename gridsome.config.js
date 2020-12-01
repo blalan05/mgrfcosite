@@ -51,6 +51,9 @@ module.exports = {
       }
     }
   ],
+  chainWebpack: config => {
+    config.resolve.alias.set('@services', '@/assets/services')
+  },
   transformers: {
     remark: {
       plugins: [

@@ -4,7 +4,7 @@ services: Services,Shop
 tags: Services,Shop
 category: Services
 excerpt: Whether you need simple lathe work, or more complicated CNC Milling, we are the shop for you.
-image: ./images/machining.png
+image: machining.png
 image_caption: Metal Lathe
 ---
 

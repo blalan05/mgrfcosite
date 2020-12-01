@@ -4,7 +4,7 @@ services: Services,Shop,Feed Body
 tags: Services,Shop,Feed Body
 category: Services
 excerpt: We have a dedicated team of experienced Repair Technicians with a supporting crew that can help you get back to operational condition in a timely manner.
-image: ./images/bulk_unit_repair.jpg
+image: bulk_unit_repair.jpg
 image_caption: Employees Repairing a Bulk Feed Body Unit
 ---
 

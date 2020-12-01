@@ -5,7 +5,7 @@ tags: Services,Shop
 category: Services
 excerpt: We have CAD (Computer Aided Drawing) software and draftsman that assist us to prototype your parts/equipment and fabricate them to specifications.
 created: 2019-01-10
-image: ./images/cad.png
+image: cad.png
 image_caption: Employee using SolidWorks to draft a customers part
 ---
 

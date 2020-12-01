@@ -4,7 +4,7 @@ services: Services,Shop
 tags: Services,Shop
 category: Services
 excerpt: The waterjet is capable of cutting multiple material types at varying thicknesses.
-image: ./images/waterjet.jpg
+image: waterjet.jpg
 image_caption: Waterjet cutting through steel
 ---
 

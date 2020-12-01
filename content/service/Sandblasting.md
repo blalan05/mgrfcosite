@@ -4,7 +4,7 @@ services: Services,Shop
 tags: Services,Shop
 category: Services
 excerpt: With steel shot and a large blast room, we are able to sandblast your small parts or large equipment.
-image: ./images/sandblasting.jpg
+image: sandblasting.jpg
 image_caption: Employee Sandblasting
 ---
 

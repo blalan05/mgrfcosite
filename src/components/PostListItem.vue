@@ -5,7 +5,7 @@
   >
     <g-link :to="record.path" class="post-card-image-link">
       <g-image
-        :src="record.image"
+        :src="require(`!!assets-loader!@services/${imageUrl}`)"
         :alt="record.image_caption"
         class="post-card-image"
       ></g-image>
@@ -29,6 +29,11 @@ export default {
     border: {
       type: Boolean,
       default: true,
+    },
+  },
+  computed: {
+    imageUrl() {
+      return this.record.image;
     },
   },
 };
