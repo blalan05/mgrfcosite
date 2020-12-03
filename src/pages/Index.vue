@@ -6,6 +6,7 @@
           v-for="edge in $page.entries.edges"
           :key="edge.node.id"
           :record="edge.node"
+          type="services"
         />
       </div>
     </div>

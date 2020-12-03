@@ -39,16 +39,18 @@
     >
       <div class="container mx-auto">
         <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
-          <PostListItem
+          <ProductPostListItem
             v-if="$page.previous"
             :record="$page.previous"
             :border="false"
-          ></PostListItem>
-          <PostListItem
+            type="products"
+          ></ProductPostListItem>
+          <ProductPostListItem
             v-if="$page.next"
             :record="$page.next"
             :border="false"
-          ></PostListItem>
+            type="products"
+          ></ProductPostListItem>
         </div>
       </div>
     </section>
@@ -66,14 +68,18 @@
       content
     }
 
-    previous: service(id: $previousElement) {
+    previous: product(id: $previousElement) {
       title
+      image
+      image_caption
       excerpt
       path
     }
 
-    next: service(id: $nextElement) {
+    next: product(id: $nextElement) {
       title
+      image
+      image_caption
       excerpt
       path
     }
@@ -84,11 +90,11 @@
 </page-query>
 
 <script>
-import PostListItem from "~/components/PostListItem.vue";
+import ProductPostListItem from "~/components/ProductPostListItem.vue";
 
 export default {
   components: {
-    PostListItem,
+    ProductPostListItem,
   },
   metaInfo() {
     return {

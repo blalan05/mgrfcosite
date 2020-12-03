@@ -62,14 +62,6 @@ module.exports = function (api) {
               path
             }
           }
-        },
-        allServices {
-          edges {
-            node {
-              id
-              path
-            }
-          }
         }
       }
     `);
@@ -97,16 +89,6 @@ module.exports = function (api) {
         }
       })
     });
-
-    // data.allServices.edges.forEach(function (element) {
-    //   createPage({
-    //     path: element.node.path,
-    //     component: './src/templates/Tag.vue',
-    //     context: {
-    //       id: element.node.id
-    //     }
-    //   })
-    // })
 
   });
 }

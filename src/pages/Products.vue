@@ -2,10 +2,11 @@
   <Layout>
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-wrap with-large pt-16 pb-16 mx-4 sm:-mx-4">
-        <PostListItem
+        <ProductPostListItem
           v-for="edge in $page.entries.edges"
           :key="edge.node.id"
           :record="edge.node"
+          type="products"
         />
       </div>
     </div>
@@ -25,6 +26,8 @@ query($page:Int) {
     edges {
       node {
         title
+        image
+        image_caption
         excerpt
         path
       }
@@ -35,14 +38,14 @@ query($page:Int) {
 </page-query>
 
 <script>
-import PostListItem from "~/components/PostListItem.vue";
+import ProductPostListItem from "~/components/ProductPostListItem.vue";
 
 export default {
   metaInfo: {
     title: "Products",
   },
   components: {
-    PostListItem,
+    ProductPostListItem,
   },
 };
 </script>
