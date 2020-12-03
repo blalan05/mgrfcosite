@@ -6,11 +6,6 @@
       "external": false
     },
     {
-      "name": "Services",
-      "link": "/services/services",
-      "external": false
-    },
-    {
       "name": "Products",
       "link": "/products",
       "external": false

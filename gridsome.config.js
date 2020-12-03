@@ -52,7 +52,8 @@ module.exports = {
     }
   ],
   chainWebpack: config => {
-    config.resolve.alias.set('@services', '@/assets/services')
+    config.resolve.alias.set('@services', '@/assets/services'),
+    config.resolve.alias.set('@products', '@/assets/products')
   },
   transformers: {
     remark: {
@@ -75,7 +76,6 @@ module.exports = {
     }],
     Services: [{
       path: '/services/:title',
-      component: '~/templates/Tag.vue'
     }],
   }
 }

@@ -16,7 +16,7 @@
 
 query($page:Int) {
 
-  entries: allService(perPage: 9, page: $page, sortBy: "title", order: ASC) @paginate {
+  entries: allServices(filter: {title: { ne: "Services" } }, perPage: 9, page: $page, sortBy: "title", order: ASC) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -25,8 +25,6 @@ query($page:Int) {
     edges {
       node {
         title
-        excerpt
-        image
         path
       }
     }

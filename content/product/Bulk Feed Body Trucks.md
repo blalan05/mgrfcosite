@@ -3,9 +3,9 @@ title: Bulk Feed Body Trucks
 services: Services,Shop,Feed Body
 tags: Services,Shop,Feed Body
 category: Product
-excerpt: 
-image: 
-image_caption: 
+excerpt: Our made-to-order Bulk Feed Body Trucks can fit every need.
+image: bulk_feed_body_trucks.png
+image_caption: Bulk Feed Body Trucks
 ---
 <br>
 Each truck is made with a one piece top loading door for easy opening and continuous loading. The door can be fully opened from the ground useing a hand crank or pneumatic control.

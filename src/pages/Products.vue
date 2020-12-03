@@ -16,7 +16,7 @@
 
 query($page:Int) {
 
-  entries: allProduct(perPage: 9, page: $page) @paginate {
+  entries: allProduct(perPage: 9, page: $page, sortBy: "title", order: ASC) @paginate {
     totalCount
     pageInfo {
       totalPages

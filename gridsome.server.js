@@ -35,7 +35,7 @@ module.exports = function (api) {
       const {
         data
       } = await graphql(`{
-        allService {
+        allService(sortBy: "title", order: ASC) {
           edges {
             previous {
               id
@@ -49,7 +49,7 @@ module.exports = function (api) {
             }
           }
         },
-        allProduct {
+        allProduct(sortBy: "title", order: ASC) {
           edges {
             previous {
               id
@@ -57,6 +57,14 @@ module.exports = function (api) {
             next {
               id
             }
+            node {
+              id
+              path
+            }
+          }
+        },
+        allServices {
+          edges {
             node {
               id
               path
@@ -89,6 +97,16 @@ module.exports = function (api) {
         }
       })
     });
+
+    // data.allServices.edges.forEach(function (element) {
+    //   createPage({
+    //     path: element.node.path,
+    //     component: './src/templates/Tag.vue',
+    //     context: {
+    //       id: element.node.id
+    //     }
+    //   })
+    // })
 
   });
 }

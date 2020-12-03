@@ -13,6 +13,15 @@
         </section>
       </div>
 
+      <section class="post-image mx-auto w-full">
+        <g-image
+          :src="
+            require(`!!assets-loader?width=1600&height=800!@products/${imageUrl}`)
+          "
+          :alt="$page.product.image_caption"
+        ></g-image>
+      </section>
+
       <div class="lg:mx-32 md:mx-16 px-4 sm:px-0">
         <section
           class="post-content container mx-auto relative font-serif text-gray-700"
@@ -51,6 +60,8 @@
     product(id: $id) {
       title
       path
+      image
+      image_caption
       excerpt
       content
     }
