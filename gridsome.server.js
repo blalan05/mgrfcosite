@@ -48,6 +48,20 @@ module.exports = function (api) {
               path
             }
           }
+        },
+        allProduct {
+          edges {
+            previous {
+              id
+            }
+            next {
+              id
+            }
+            node {
+              id
+              path
+            }
+          }
         }
       }
     `);
@@ -62,7 +76,18 @@ module.exports = function (api) {
           id: element.node.id
         }
       });
+    });
 
+    data.allProduct.edges.forEach(function (element) {
+      createPage({
+        path: element.node.path,
+        component: './src/templates/ProductPost.vue',
+        context: {
+          previousElement: (element.previous) ? element.previous.id : '##empty##',
+          nextElement: (element.next) ? element.next.id : '##empty##',
+          id: element.node.id
+        }
+      })
     });
 
   });

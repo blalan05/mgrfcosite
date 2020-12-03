@@ -11,6 +11,11 @@
       "external": false
     },
     {
+      "name": "Products",
+      "link": "/products",
+      "external": false
+    },
+    {
       "name": "About",
       "link": "/about",
       "external": false

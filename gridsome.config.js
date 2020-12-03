@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'MGRF',
   siteDescription: 'Custom Grain Equipment Manufacturer',
-  siteUrl: 'http://localhost:8080',
+  siteUrl: process.env.SITE_URL,
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -72,7 +72,6 @@ module.exports = {
     }],
     Product: [{
       path: '/product/:title',
-      component: '~/templates/BlogPost.vue'
     }],
     Services: [{
       path: '/services/:title',

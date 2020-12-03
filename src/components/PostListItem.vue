@@ -3,7 +3,7 @@
     class="flex flex-post px-0 sm:px-4 pb-8 mb-8"
     v-bind:class="{ 'no-border': !border }"
   >
-    <g-link :to="record.path" class="post-card-image-link">
+    <g-link :to="record.path" class="post-card-image-link" v-if="record.image">
       <g-image
         :src="require(`!!assets-loader?width=800!@services/${imageUrl}`)"
         :alt="record.image_caption"
