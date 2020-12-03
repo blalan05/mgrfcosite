@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'MGRF',
-  siteDescription: 'Custom Grain Equipment Manufacturer',
+  siteDescription: 'Repairing your past... Fabricating your future.',
   siteUrl: process.env.SITE_URL,
   plugins: [
     {
