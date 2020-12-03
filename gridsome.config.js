@@ -71,8 +71,8 @@ module.exports = {
       path: '/service/:title'
     }],
     Product: [{
-      path: '/product/:name',
-      component: '~/templates/Author.vue'
+      path: '/product/:title',
+      component: '~/templates/BlogPost.vue'
     }],
     Services: [{
       path: '/services/:title',
